@@ -1,32 +1,173 @@
-body {
-    padding-top: 56px;
-    font-family: Arial, sans-serif;
+/* ==============================
+   THEME VARIABLES
+============================== */
+:root {
+    --primary: #6366f1;      /* Indigo */
+    --secondary: #22d3ee;    /* Cyan */
+    --accent: #facc15;      /* Yellow */
+    --dark: #0f172a;        /* Dark Navy */
+    --light: #f8fafc;
+
+    /* Glass background */
+    --glass: rgba(255, 255, 255, 0.18);
 }
 
+/* ==============================
+   BASE STYLES
+============================== */
+body {
+    padding-top: 56px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #0f172a, #020617);
+    color: var(--light);
+    scroll-behavior: smooth;
+}
+
+/* ==============================
+   NAVBAR
+============================== */
+.navbar {
+    backdrop-filter: blur(12px);
+    background: rgba(15, 23, 42, 0.75) !important;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* ==============================
+   HERO SECTION
+============================== */
 .hero {
     height: 100vh;
-    background: linear-gradient(to right, #0d6efd, #6610f2);
-    color: white;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at top right, #22d3ee33, transparent 40%),
+        radial-gradient(circle at bottom left, #6366f133, transparent 40%);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 .hero h1 span {
-    color: #ffd700;
+    background: linear-gradient(90deg, var(--secondary), var(--primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+.hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ==============================
+   SECTIONS
+============================== */
 .section {
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
+/* ==============================
+   GLASS CARDS (PROJECTS)
+============================== */
+.card {
+    background: var(--glass);
+    backdrop-filter: blur(14px);
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    transition: all 0.35s ease;
+    color: var(--light);
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 30px 80px rgba(99, 102, 241, 0.35);
+}
+
+/* ==============================
+   SKILLS SECTION (COLORED BOXES)
+============================== */
 .skill-box {
-    background: #0d6efd;
+    padding: 25px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 16px;
     color: white;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 8px;
-    font-weight: bold;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    transition: all 0.35s ease;
 }
 
+/* Individual Skill Colors */
+.skill-python {
+    background: linear-gradient(135deg, #306998, #ffd43b);
+}
+
+.skill-ds {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.skill-ai {
+    background: linear-gradient(135deg, #8b5cf6, #6366f1);
+}
+
+.skill-design {
+    background: linear-gradient(135deg, #ec4899, #f43f5e);
+}
+
+/* Hover effect */
+.skill-box:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+}
+
+/* ==============================
+   BUTTONS
+============================== */
+.btn-primary {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border: none;
+    border-radius: 50px;
+    padding: 12px 28px;
+    font-weight: 500;
+    box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(34, 211, 238, 0.6);
+}
+
+/* ==============================
+   CONTACT SECTION
+============================== */
+#contact {
+    background:
+        radial-gradient(circle at left, #6366f122, transparent 50%),
+        radial-gradient(circle at right, #22d3ee22, transparent 50%);
+}
+
+/* ==============================
+   FOOTER
+============================== */
 footer {
-    background: #000;
-    color: #aaa;
+    background: rgba(15, 23, 42, 0.9);
+    color: #94a3b8;
+    letter-spacing: 0.5px;
+}
+
+/* ==============================
+   RESPONSIVE DESIGN
+============================== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
 }
