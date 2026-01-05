@@ -2,19 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Vaibhav | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<!-- =========================
+     NAVBAR
+========================= -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">Vaibhav</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
@@ -31,90 +36,117 @@
     </div>
 </nav>
 
-<!-- Hero Section -->
-<section class="hero d-flex align-items-center">
+<!-- =========================
+     HERO SECTION
+========================= -->
+<section class="hero">
     <div class="container text-center">
         <h1>Hello, I'm <span>Vaibhav Dudhal</span></h1>
-        <p>Student | Developer | Tech Enthusiast</p>
-        <a href="#contact" class="btn btn-primary">Hire Me</a>
+        <p>Data Science • AI • Python • Character Design</p>
+        <a href="#contact" class="btn btn-primary mt-3">Hire Me</a>
     </div>
 </section>
 
-<!-- About -->
+<!-- =========================
+     ABOUT SECTION
+========================= -->
 <section id="about" class="section">
     <div class="container">
         <h2 class="text-center">About Me</h2>
         <p class="text-center mt-3">
-            I am a passionate computer science student interested in web development,
-            databases, and artificial intelligence. I enjoy building clean and
-            user-friendly applications.
+            I am a passionate learner with strong interests in Data Science, Python
+            programming, Artificial Intelligence, and Character Designing. I enjoy
+            exploring data-driven insights, building intelligent systems, and blending
+            creativity with technology to create meaningful digital experiences.
         </p>
     </div>
 </section>
 
-<!-- Skills -->
-<section id="skills" class="section bg-light">
+<!-- =========================
+     SKILLS SECTION
+========================= -->
+<section id="skills" class="section">
     <div class="container">
-        <h2 class="text-center">Skills</h2>
-        <div class="row mt-4 text-center">
-            <div class="col-md-3 col-sm-6 skill-box">HTML</div>
-            <div class="col-md-3 col-sm-6 skill-box">CSS</div>
-            <div class="col-md-3 col-sm-6 skill-box">Bootstrap</div>
-            <div class="col-md-3 col-sm-6 skill-box">Python</div>
+        <h2 class="text-center mb-5">Skills</h2>
+        <div class="row text-center">
+            <div class="col-md-3 col-sm-6">
+                <div class="skill-box skill-python">Python</div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="skill-box skill-ds">Data Science</div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="skill-box skill-ai">Artificial Intelligence</div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="skill-box skill-design">Character Designing</div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Projects -->
+<!-- =========================
+     PROJECTS SECTION
+========================= -->
 <section id="projects" class="section">
     <div class="container">
-        <h2 class="text-center">Projects</h2>
-        <div class="row mt-4">
+        <h2 class="text-center mb-5">Projects</h2>
+        <div class="row g-4">
+
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Flora Care App</h5>
-                        <p class="card-text">An app providing plant care information.</p>
-                    </div>
+                <div class="card p-4 h-100">
+                    <h5>Flora Care App</h5>
+                    <p>
+                        A smart application that provides plant care guidance including
+                        watering schedules, growth tracking, and plant health tips.
+                    </p>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Portfolio Website</h5>
-                        <p class="card-text">Personal responsive portfolio using Bootstrap.</p>
-                    </div>
+                <div class="card p-4 h-100">
+                    <h5>Data Analysis Project</h5>
+                    <p>
+                        Data analysis and visualization project using Python to extract
+                        meaningful insights from structured datasets.
+                    </p>
                 </div>
             </div>
 
             <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Data Analysis Project</h5>
-                        <p class="card-text">Data visualization using Python.</p>
-                    </div>
+                <div class="card p-4 h-100">
+                    <h5>AI-Based System</h5>
+                    <p>
+                        An AI-driven project focused on intelligent decision-making and
+                        automation using machine learning concepts.
+                    </p>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="section bg-dark text-white">
+<!-- =========================
+     CONTACT SECTION
+========================= -->
+<section id="contact" class="section">
     <div class="container text-center">
         <h2>Contact Me</h2>
-        <p>Email: vaibhav@email.com</p>
-        <p>Phone: +91 XXXXX XXXXX</p>
+        <p class="mt-3">Email: vaibhavdudhal56789@email.com</p>
+        <p>Phone: +91 9527444777</p>
     </div>
 </section>
 
-<!-- Footer -->
+<!-- =========================
+     FOOTER
+========================= -->
 <footer class="text-center py-3">
     © 2026 Vaibhav Dudhal | All Rights Reserved
 </footer>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
